@@ -3,6 +3,7 @@
     include __DIR__ . '/../models/movie.php';    
     include __DIR__ . '/../models/category.php';    
 
+    // array con oggetti Movie che hanno a loro volta un array di oggetti Categorys
     $movies = [
 
         $movie = new Movie('Superman', '12/01/2020', 9, 
@@ -37,13 +38,9 @@
         )
 
     ];
-
-    // $movie->getMovie();
-
     
     header('Content-Type: application/json');
     
     // trasformazione in file json da php, se array multidimensionale va true
     echo json_encode($movies, true);
-    // var_dump($movies);
 ?>

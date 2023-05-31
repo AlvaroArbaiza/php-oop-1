@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +27,7 @@
         <!-- MAIN -->
         <main>
             <div class="container">
-                <div class="row justify-content-between">
+                <div class="row justify-content-between row-gap-3">
 
                     <!-- cards -->
                     <div class="card" style="width: 18rem;"
