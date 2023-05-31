@@ -39,9 +39,18 @@
 
                             <h5 class="card-title">{{ elem.title }}</h5>
 
-                            <h6>{{ elem.date }}</h6>
+                            <h6>Data: {{ elem.date }}</h6>
 
-                            <h6>{{ elem.vote }}</h6>
+                            <h6>Vote: {{ elem.vote }}</h6>
+
+                            <div class="d-flex column-gap-2">
+
+                                <span v-for="(el, i) in elem.category" :key="i" 
+                                    class="badge text-bg-primary">
+                                    {{ el.genres }}
+                                </span>
+
+                            </div>
 
                         </div>
                     </div>
