@@ -1,13 +1,40 @@
 <?php
 
     include __DIR__ . '/../models/movie.php';    
+    include __DIR__ . '/../models/category.php';    
 
     $movies = [
-        $movie = new Movie('Superman', '12/01/2020', 9),
-        $movie = new Movie('Ironman', '12/01/2020', 9),
-        $movie = new Movie('Spiderman', '12/01/2020', 9),
-        $movie = new Movie('Ultraman', '12/01/2020', 9),
-        $movie = new Movie('Wonder Woman', '12/01/2020', 9)
+
+        $movie = new Movie('Superman', '12/01/2020', 9, 
+            [
+                new Category('Horror'),
+                new Category('Comic')
+            ]
+        ),
+        $movie = new Movie('Ironman', '12/01/2020', 9, 
+            [
+                new Category('Comic'),
+                new Category('Historic')
+            ]
+        ),
+        $movie = new Movie('Spiderman', '12/01/2020', 9, 
+            [
+                new Category('Comic'),
+                new Category('Musical')
+            ]
+        ),
+        $movie = new Movie('Ultraman', '12/01/2020', 9, 
+            [
+                new Category('Horror'),
+                new Category('Animation')
+            ]
+        ),
+        $movie = new Movie('Wonder Woman', '12/01/2020', 9, 
+            [
+                new Category('Romantic'),
+                new Category('Horror')
+            ]
+        )
 
     ];
 

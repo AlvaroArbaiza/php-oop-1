@@ -37,7 +37,7 @@
                         
                         <div class="card-body">
 
-                            <h5                        class="card-title">{{ elem.title }}</h5>
+                            <h5 class="card-title">{{ elem.title }}</h5>
 
                             <h6>{{ elem.date }}</h6>
 
