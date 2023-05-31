@@ -4,6 +4,7 @@ const { createApp } = Vue
         data() {
             return {
                 pathServer: 'http://localhost:8888/php-oop-1/apis/server.php',
+                data: ''
             }        
         },
         methods: {
@@ -16,5 +17,8 @@ const { createApp } = Vue
 
                 })
             },
+        },
+        mounted() {
+            this.call();
         }
     }).mount('#app')

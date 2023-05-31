@@ -20,7 +20,7 @@
                 <div class="row pt-5">
                     <div class="col">
                         
-                        <h1>Movies</h1>
+                        <h1 class="text-center">Movies</h1>
                     </div>
                 </div>
             </div>
@@ -32,11 +32,17 @@
                 <div class="row justify-content-between">
 
                     <!-- cards -->
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                    <div class="card" style="width: 18rem;"
+                    v-for="(elem, index) in this.data" :key="index">
+                        
                         <div class="card-body">
 
-                            <h5 class="card-title">Card title</h5>                        
+                            <h5                        class="card-title">{{ elem.title }}</h5>
+
+                            <h6>{{ elem.date }}</h6>
+
+                            <h6>{{ elem.vote }}</h6>
+
                         </div>
                     </div>
                 </div>
@@ -46,6 +52,8 @@
 
     <!-- Vue -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>    
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <!-- Main JS -->
